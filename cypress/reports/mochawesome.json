@@ -1,0 +1,707 @@
+{
+  "stats": {
+    "suites": 8,
+    "tests": 21,
+    "passes": 1,
+    "pending": 0,
+    "failures": 20,
+    "start": "2020-06-09T01:00:59.158Z",
+    "end": "2020-06-09T01:05:17.152Z",
+    "duration": 257994,
+    "testsRegistered": 21,
+    "passPercent": 4.761904761904762,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a15ef73b-f707-4876-90a0-2de9ceb2c9c2",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3b814fbd-063c-45bb-bf70-2de7826b1729",
+          "title": "O _header_ deve conter as informações da pessoa jogadora",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "a imagem do Gravatar está presente no header",
+              "fullTitle": "O _header_ deve conter as informações da pessoa jogadora a imagem do Gravatar está presente no header",
+              "timedOut": null,
+              "duration": 12025,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(HEADER_IMAGE_SELECTOR).should('exist');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"header-profile-picture\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"header-profile-picture\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "401ad720-02cf-4463-b6ea-9801cf58e2f4",
+              "parentUUID": "3b814fbd-063c-45bb-bf70-2de7826b1729",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "o nome da pessoa está presente no header",
+              "fullTitle": "O _header_ deve conter as informações da pessoa jogadora o nome da pessoa está presente no header",
+              "timedOut": null,
+              "duration": 11302,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(HEADER_NAME_SELECTOR).contains(name);",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"header-player-name\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"header-player-name\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "1b8935c7-3c3d-496c-b70f-0e457d8f2285",
+              "parentUUID": "3b814fbd-063c-45bb-bf70-2de7826b1729",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "o placar zerado está presente no header",
+              "fullTitle": "O _header_ deve conter as informações da pessoa jogadora o placar zerado está presente no header",
+              "timedOut": null,
+              "duration": 11274,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(HEADER_SCORE_SELECTOR).contains('0');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"header-score\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"header-score\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "f7ddd4e4-2485-4cba-b1bb-014e96dc9818",
+              "parentUUID": "3b814fbd-063c-45bb-bf70-2de7826b1729",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "401ad720-02cf-4463-b6ea-9801cf58e2f4",
+            "1b8935c7-3c3d-496c-b70f-0e457d8f2285",
+            "f7ddd4e4-2485-4cba-b1bb-014e96dc9818"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 34601,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "313917a1-2d36-4724-bbf8-54190a5c85f0",
+          "title": "A página deve conter as informações relacionadas à pergunta",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "a categoria da pergunta está presente",
+              "fullTitle": "A página deve conter as informações relacionadas à pergunta a categoria da pergunta está presente",
+              "timedOut": null,
+              "duration": 11362,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(QUESTION_CATEGORY_SELECTOR).should('exist');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"question-category\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"question-category\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "563274a2-174d-40dc-b99c-80cd9bde4c38",
+              "parentUUID": "313917a1-2d36-4724-bbf8-54190a5c85f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "o texto da pergunta está presente",
+              "fullTitle": "A página deve conter as informações relacionadas à pergunta o texto da pergunta está presente",
+              "timedOut": null,
+              "duration": 11302,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(QUESTION_TEXT_SELECTOR).should('exist');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"question-text\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"question-text\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "5ac08ccc-59ef-4aea-ad27-96b4ef7e315a",
+              "parentUUID": "313917a1-2d36-4724-bbf8-54190a5c85f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "as alternativas devem estar presentes",
+              "fullTitle": "A página deve conter as informações relacionadas à pergunta as alternativas devem estar presentes",
+              "timedOut": null,
+              "duration": 11301,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).should('exist');\ncy.get(WRONG_ALTERNATIVES_SELECTOR).should('exist');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "f0639be9-e16b-4163-b803-a42cb6662e7f",
+              "parentUUID": "313917a1-2d36-4724-bbf8-54190a5c85f0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "563274a2-174d-40dc-b99c-80cd9bde4c38",
+            "5ac08ccc-59ef-4aea-ad27-96b4ef7e315a",
+            "f0639be9-e16b-4163-b803-a42cb6662e7f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 33965,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "be669bbb-e80e-45a8-af54-b9f1efcf966b",
+          "title": "Só deve ser possível escolher uma resposta correta por pergunta",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "a quantidade de respostas corretas deve ser 1",
+              "fullTitle": "Só deve ser possível escolher uma resposta correta por pergunta a quantidade de respostas corretas deve ser 1",
+              "timedOut": null,
+              "duration": 11286,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).should('have.length', 1);",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "ad40d1a9-11b2-4eae-96a1-fa0e37551c0d",
+              "parentUUID": "be669bbb-e80e-45a8-af54-b9f1efcf966b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ad40d1a9-11b2-4eae-96a1-fa0e37551c0d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 11286,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "35bdd930-3c25-4b55-bb15-60d26a414c4e",
+          "title": "Ao clicar em uma resposta, a resposta correta deve ficar verde e as incorretas, vermelhas",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verifica cor da alternativa correta quando acerta a questão",
+              "fullTitle": "Ao clicar em uma resposta, a resposta correta deve ficar verde e as incorretas, vermelhas verifica cor da alternativa correta quando acerta a questão",
+              "timedOut": null,
+              "duration": 11323,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).should('have.css', 'border', '3px solid rgb(6, 240, 15)');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "ff62e9f7-e3e7-4cde-9fae-82aec2a54e3b",
+              "parentUUID": "35bdd930-3c25-4b55-bb15-60d26a414c4e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verifica a cor das alternativas incorretas quando acerta a questão",
+              "fullTitle": "Ao clicar em uma resposta, a resposta correta deve ficar verde e as incorretas, vermelhas verifica a cor das alternativas incorretas quando acerta a questão",
+              "timedOut": null,
+              "duration": 11462,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).should('have.css', 'border', '3px solid rgb(255, 0, 0)');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "4546fb0c-8e97-46c1-bd92-5e4a903e4789",
+              "parentUUID": "35bdd930-3c25-4b55-bb15-60d26a414c4e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verifica cor da alternativa correta quando erra a questão",
+              "fullTitle": "Ao clicar em uma resposta, a resposta correta deve ficar verde e as incorretas, vermelhas verifica cor da alternativa correta quando erra a questão",
+              "timedOut": null,
+              "duration": 11277,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).should('have.css', 'border', '3px solid rgb(6, 240, 15)');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid*=\"wrong-answer\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid*=\"wrong-answer\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "ed751bbd-93b4-4113-8f6f-1fbffc160410",
+              "parentUUID": "35bdd930-3c25-4b55-bb15-60d26a414c4e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verifica a cor das alternativas incorretas quando erra a questão",
+              "fullTitle": "Ao clicar em uma resposta, a resposta correta deve ficar verde e as incorretas, vermelhas verifica a cor das alternativas incorretas quando erra a questão",
+              "timedOut": null,
+              "duration": 11343,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).should('have.css', 'border', '3px solid rgb(255, 0, 0)');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid*=\"wrong-answer\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid*=\"wrong-answer\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "cda753a0-00f6-4785-9c9a-557f9a43ea89",
+              "parentUUID": "35bdd930-3c25-4b55-bb15-60d26a414c4e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ff62e9f7-e3e7-4cde-9fae-82aec2a54e3b",
+            "4546fb0c-8e97-46c1-bd92-5e4a903e4789",
+            "ed751bbd-93b4-4113-8f6f-1fbffc160410",
+            "cda753a0-00f6-4785-9c9a-557f9a43ea89"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 45405,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "56b1555a-fdda-49eb-9f5b-6260bf1fc824",
+          "title": "A pessoa que joga tem 30 segundos para responder cada pergunta",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "aguarda 5 segundos e responde a alternativa correta",
+              "fullTitle": "A pessoa que joga tem 30 segundos para responder cada pergunta aguarda 5 segundos e responde a alternativa correta",
+              "timedOut": null,
+              "duration": 6738,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(5000);\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).should('not.be.disabled').click();",
+              "err": {
+                "message": "CypressError: cy.click() failed because it requires a DOM element.\n\nThe subject received was:\n\n  > Object{3}\n\nThe previous command that ran was:\n\n  > cy.should()",
+                "estack": "CypressError: cy.click() failed because it requires a DOM element.\n\nThe subject received was:\n\n  > Object{3}\n\nThe previous command that ran was:\n\n  > cy.should()\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at ensureElement (http://localhost:3000/__cypress/runner/cypress_runner.js:74310:21)\n    at validateType (http://localhost:3000/__cypress/runner/cypress_runner.js:74182:16)\n    at Object.ensureSubjectByType (http://localhost:3000/__cypress/runner/cypress_runner.js:74210:9)\n    at pushSubjectAndValidate (http://localhost:3000/__cypress/runner/cypress_runner.js:81127:15)\n    at Context.<anonymous> (http://localhost:3000/__cypress/runner/cypress_runner.js:81413:18)\n    at http://localhost:3000/__cypress/runner/cypress_runner.js:80892:33\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromiseCtx (http://localhost:3000/__cypress/runner/cypress_runner.js:118699:10)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115399:12)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "4853a06b-f13b-4890-9b7d-48acefd0a3c0",
+              "parentUUID": "56b1555a-fdda-49eb-9f5b-6260bf1fc824",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "aguarda mais de 30 segundos para responder",
+              "fullTitle": "A pessoa que joga tem 30 segundos para responder cada pergunta aguarda mais de 30 segundos para responder",
+              "timedOut": null,
+              "duration": 43437,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(32000);\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).should('be.disabled');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "1e70caf2-143d-44c6-a589-b805669ab9d8",
+              "parentUUID": "56b1555a-fdda-49eb-9f5b-6260bf1fc824",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "4853a06b-f13b-4890-9b7d-48acefd0a3c0",
+            "1e70caf2-143d-44c6-a589-b805669ab9d8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 50175,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "7164a597-934f-4dc8-9ea2-ce55ed3d2fd7",
+          "title": "Ao clicar na resposta correta, pontos devem ser somados no placar da pessoa que está jogando",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "soma pontos ao acertar uma questão",
+              "fullTitle": "Ao clicar na resposta correta, pontos devem ser somados no placar da pessoa que está jogando soma pontos ao acertar uma questão",
+              "timedOut": null,
+              "duration": 11407,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var then = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click().then(function () {\n  var now = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(then.player.score).to.be.lt(now.player.score);\n});",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "a669c0a8-e632-49ab-ad57-037e24cb8db5",
+              "parentUUID": "7164a597-934f-4dc8-9ea2-ce55ed3d2fd7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "não soma pontos ao errar uma questão",
+              "fullTitle": "Ao clicar na resposta correta, pontos devem ser somados no placar da pessoa que está jogando não soma pontos ao errar uma questão",
+              "timedOut": null,
+              "duration": 11397,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var then = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click().then(function () {\n  var now = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(then.player.score).to.be.eq(now.player.score);\n});",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid*=\"wrong-answer\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid*=\"wrong-answer\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "c92d2639-e95f-46a5-a535-9e834f6a88dc",
+              "parentUUID": "7164a597-934f-4dc8-9ea2-ce55ed3d2fd7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a669c0a8-e632-49ab-ad57-037e24cb8db5",
+            "c92d2639-e95f-46a5-a535-9e834f6a88dc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 22804,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "667bbe43-1a9d-4a21-9075-98d2859c6afb",
+          "title": "Após a resposta ser dada, o botão \"Próxima\" deve aparecer",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "o botão de próxima pergunta não deve ser visível o início do jogo",
+              "fullTitle": "Após a resposta ser dada, o botão \"Próxima\" deve aparecer o botão de próxima pergunta não deve ser visível o início do jogo",
+              "timedOut": null,
+              "duration": 1017,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(BUTTON_NEXT_QUESTION_SELECTOR).should('not.be.visible');",
+              "err": {},
+              "uuid": "55757131-84b1-45b0-8549-fd2fbf15ac97",
+              "parentUUID": "667bbe43-1a9d-4a21-9075-98d2859c6afb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "botão de próxima pergunta é visível quando a pergunta é respondida corretamente",
+              "fullTitle": "Após a resposta ser dada, o botão \"Próxima\" deve aparecer botão de próxima pergunta é visível quando a pergunta é respondida corretamente",
+              "timedOut": null,
+              "duration": 11279,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).should('be.visible');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "9031c8ac-a117-4cef-abc8-f5ae0425ffe3",
+              "parentUUID": "667bbe43-1a9d-4a21-9075-98d2859c6afb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "botão de próxima pergunta é visível quando a pergunta é respondida incorretamente",
+              "fullTitle": "Após a resposta ser dada, o botão \"Próxima\" deve aparecer botão de próxima pergunta é visível quando a pergunta é respondida incorretamente",
+              "timedOut": null,
+              "duration": 11285,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).should('be.visible');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid*=\"wrong-answer\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid*=\"wrong-answer\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "36dde3a1-86c4-49b6-a55b-a9a558cd1c79",
+              "parentUUID": "667bbe43-1a9d-4a21-9075-98d2859c6afb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "55757131-84b1-45b0-8549-fd2fbf15ac97"
+          ],
+          "failures": [
+            "9031c8ac-a117-4cef-abc8-f5ae0425ffe3",
+            "36dde3a1-86c4-49b6-a55b-a9a558cd1c79"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 23581,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "33e50937-3808-40d7-b1ca-18472d748a6f",
+          "title": "A pessoa que joga deve responder 5 perguntas no total",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "acerta todas as perguntas",
+              "fullTitle": "A pessoa que joga deve responder 5 perguntas no total acerta todas as perguntas",
+              "timedOut": null,
+              "duration": 11365,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var before = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click().then(function () {\n  var after = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(before.player.score).to.be.lt(after.player.score);\n});",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "a6671f33-d2a3-4ff4-82fe-f826d6bc07c7",
+              "parentUUID": "33e50937-3808-40d7-b1ca-18472d748a6f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "erra todas as perguntas",
+              "fullTitle": "A pessoa que joga deve responder 5 perguntas no total erra todas as perguntas",
+              "timedOut": null,
+              "duration": 11550,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var before = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click().then(function () {\n  var after = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(before.player.score).to.be.eq(after.player.score);\n});",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid*=\"wrong-answer\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid*=\"wrong-answer\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "75e9c943-c0b5-4940-9205-0498db740e98",
+              "parentUUID": "33e50937-3808-40d7-b1ca-18472d748a6f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "redireciona para a tela de _ranking_ após a quinta pergunta",
+              "fullTitle": "A pessoa que joga deve responder 5 perguntas no total redireciona para a tela de _ranking_ após a quinta pergunta",
+              "timedOut": null,
+              "duration": 11668,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(FEEDBACK_TEXT_SELECTOR).should('exist');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"correct-answer\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118782:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:115394:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115404:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:115278:14)",
+                "diff": null
+              },
+              "uuid": "2fd26af5-fb0c-4257-8ae7-94ee3656d407",
+              "parentUUID": "33e50937-3808-40d7-b1ca-18472d748a6f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a6671f33-d2a3-4ff4-82fe-f826d6bc07c7",
+            "75e9c943-c0b5-4940-9205-0498db740e98",
+            "2fd26af5-fb0c-4257-8ae7-94ee3656d407"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 34583,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": true,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
