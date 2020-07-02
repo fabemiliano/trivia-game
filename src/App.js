@@ -10,7 +10,7 @@ import RankingScreen from './components/RankingScreen';
 export default function App() {
   return (
     <div>
-      <Router>
+      <Router basename="/frontend-online-store">
         <Switch>
           <Route exact path="/gamepage" component={GameScreen} />
           <Route exact path="/rankingscreen" component={RankingScreen} />
