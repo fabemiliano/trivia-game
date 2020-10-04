@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import Home from './components/Home';
 import GameScreen from './components/GameScreen';
@@ -8,6 +8,9 @@ import RankingScreen from './components/RankingScreen';
 
 
 export default function App() {
+  useEffect(() => {
+    document.title = 'Trivia Game'
+  }, [])
   return (
     <div>
       <Router basename="/trivia-game">
