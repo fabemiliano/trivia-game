@@ -16,5 +16,5 @@ A 30s timer is show for every question and the final score is calculated based o
 
 In the end of the game a rank can be shown ordered by highest scores.
 
-A deployed version of the project can be found on: www.fabemiliano.github.io/trivia-game
+A deployed version of the project can be found on: fabemiliano.github.io/trivia-game
 
